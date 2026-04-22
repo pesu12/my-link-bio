@@ -122,9 +122,9 @@ h1 {
 
 .edit-button {
     flex: 0 0 auto;
-    border: 1px solid #bfdbfe;
-    background-color: #dbeafe;
-    color: #1d4ed8;
+    border: 1px solid var(--accent-color);
+    background-color: var(--accent-color);
+    color: #ffffff;
     border-radius: 0.75rem;
     padding: 0.9rem 0.75rem;
     font-weight: 600;
@@ -132,7 +132,8 @@ h1 {
 }
 
 .edit-button:hover {
-    background-color: #bfdbfe;
+    background-color: var(--accent-hover);
+    border-color: var(--accent-hover);
 }
 
 .delete-button {
