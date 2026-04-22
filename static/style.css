@@ -122,13 +122,19 @@ h1 {
 
 .edit-button {
     flex: 0 0 auto;
-    border: 1px solid var(--accent-color);
-    background-color: var(--accent-color);
+    border: 1px solid #2563eb;
+    background-color: #2563eb;
     color: #ffffff;
     border-radius: 0.75rem;
     padding: 0.9rem 0.75rem;
     font-weight: 600;
     text-decoration: none;
+}
+
+.edit-button:visited,
+.edit-button:focus,
+.edit-button:active {
+    color: #ffffff;
 }
 
 .edit-button:hover {
