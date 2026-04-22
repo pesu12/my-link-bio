@@ -8,6 +8,11 @@
 <body>
     <a href="/about">About</a>
     <h1>My Links</h1>
+    <form action="/add" method="POST">
+        <input type="text" name="site_name" placeholder="Site name" required>
+        <input type="url" name="site_url" placeholder="https://example.com" required>
+        <button type="submit">Add Link</button>
+    </form>
     <ul>
         {% for link in links %}
         <li>
