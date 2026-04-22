@@ -26,6 +26,24 @@ def add_link():
     return redirect(url_for('home'))
 
 
+@app.route('/edit/<int:link_index>', methods=['GET', 'POST'])
+def edit_link(link_index):
+    # Only allow edits when the selected link exists in memory.
+    if not 0 <= link_index < len(links):
+        return redirect(url_for('home'))
+
+    if request.method == 'POST':
+        site_name = request.form.get('site_name', '').strip()
+        site_url = request.form.get('site_url', '').strip()
+
+        if site_name and site_url:
+            links[link_index] = {"name": site_name, "url": site_url}
+
+        return redirect(url_for('home'))
+
+    return render_template('edit.html', link=links[link_index], link_index=link_index)
+
+
 @app.route('/delete/<int:link_index>', methods=['POST'])
 def delete_link(link_index):
     # Remove the selected link index when it exists in the in-memory list.
