@@ -103,6 +103,12 @@ h1 {
     align-items: stretch;
 }
 
+.link-actions {
+    display: grid;
+    gap: 0.5rem;
+    align-content: start;
+}
+
 .link-card-content {
     display: grid;
     gap: 0.65rem;
@@ -152,7 +158,6 @@ h1 {
 }
 
 .link-item .edit-button {
-    flex: 0 0 auto;
     border: 1px solid #2563eb;
     background-color: #2563eb;
     color: #ffffff;
@@ -160,7 +165,8 @@ h1 {
     padding: 0.9rem 0.75rem;
     font-weight: 600;
     text-decoration: none;
-    align-self: center;
+    text-align: center;
+    align-self: flex-start;
 }
 
 .link-item .edit-button:visited,
@@ -184,7 +190,11 @@ h1 {
     padding: 0.9rem 0.75rem;
     font-weight: 600;
     cursor: pointer;
-    align-self: center;
+    align-self: flex-start;
+}
+
+.link-actions form {
+    margin: 0;
 }
 
 .delete-button:hover,
