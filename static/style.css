@@ -1,0 +1,119 @@
+:root {
+    --bg-color: #f8fafc;
+    --surface-color: #ffffff;
+    --text-color: #0f172a;
+    --muted-text: #475569;
+    --border-color: #e2e8f0;
+    --accent-color: #2563eb;
+    --accent-hover: #1d4ed8;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+.container {
+    width: min(100%, 600px);
+}
+
+.card {
+    background-color: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 0.9rem;
+    padding: 1.25rem;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+}
+
+.nav-link {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    margin-top: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.link-form {
+    display: grid;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.link-form input,
+.link-form button {
+    border: 1px solid var(--border-color);
+    border-radius: 0.75rem;
+    padding: 0.75rem 0.875rem;
+    font-size: 0.95rem;
+}
+
+.link-form input {
+    background-color: #f8fafc;
+    color: var(--text-color);
+}
+
+.link-form input:focus {
+    outline: 2px solid rgba(37, 99, 235, 0.2);
+    border-color: var(--accent-color);
+}
+
+.link-form button {
+    background-color: var(--accent-color);
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.link-form button:hover {
+    background-color: var(--accent-hover);
+}
+
+.link-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 0.75rem;
+}
+
+.link-item a {
+    display: block;
+    text-decoration: none;
+    color: var(--text-color);
+    background-color: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 0.75rem;
+    padding: 0.9rem;
+    transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.link-item a:hover {
+    border-color: #93c5fd;
+    transform: translateY(-1px);
+}
+
+p {
+    color: var(--muted-text);
+    margin-bottom: 0;
+}

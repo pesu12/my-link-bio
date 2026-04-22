@@ -4,9 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>About</h1>
-    <p>This is my personal link page.</p>
+    <main class="page">
+        <section class="container card">
+            <a class="nav-link" href="/">← Back to links</a>
+            <h1>About</h1>
+            <p>This is my personal link page.</p>
+        </section>
+    </main>
 </body>
 </html>
