@@ -99,6 +99,7 @@ h1 {
 
 .link-item a {
     display: block;
+    flex: 1;
     text-decoration: none;
     color: var(--text-color);
     background-color: var(--surface-color);
@@ -111,6 +112,26 @@ h1 {
 .link-item a:hover {
     border-color: #93c5fd;
     transform: translateY(-1px);
+}
+
+.link-item {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.delete-button {
+    border: 1px solid #fecaca;
+    background-color: #fee2e2;
+    color: #b91c1c;
+    border-radius: 0.75rem;
+    padding: 0.9rem 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: #fecaca;
 }
 
 p {
