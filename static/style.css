@@ -103,6 +103,12 @@ h1 {
     align-items: stretch;
 }
 
+.link-actions {
+    display: grid;
+    gap: 0.5rem;
+    align-content: start;
+}
+
 .link-card-content {
     display: grid;
     gap: 0.65rem;
@@ -125,6 +131,40 @@ h1 {
     text-decoration: none;
     color: var(--text-color);
     font-weight: 600;
+}
+
+.rich-card-content {
+    display: grid;
+    gap: 0.6rem;
+}
+
+.rich-card-image {
+    width: 100%;
+    max-height: 220px;
+    object-fit: cover;
+    border-radius: 0.6rem;
+    border: 1px solid var(--border-color);
+}
+
+.rich-card-title {
+    font-size: 1rem;
+}
+
+.rich-card-description {
+    margin: 0;
+    color: var(--text-color);
+    font-size: 0.9rem;
+}
+
+.rich-card-link {
+    color: var(--accent-color);
+    font-weight: 600;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+}
+
+.rich-card-link:hover {
+    text-decoration: underline;
 }
 
 .metadata-grid {
@@ -152,7 +192,6 @@ h1 {
 }
 
 .link-item .edit-button {
-    flex: 0 0 auto;
     border: 1px solid #2563eb;
     background-color: #2563eb;
     color: #ffffff;
@@ -160,7 +199,8 @@ h1 {
     padding: 0.9rem 0.75rem;
     font-weight: 600;
     text-decoration: none;
-    align-self: center;
+    text-align: center;
+    align-self: flex-start;
 }
 
 .link-item .edit-button:visited,
@@ -184,7 +224,11 @@ h1 {
     padding: 0.9rem 0.75rem;
     font-weight: 600;
     cursor: pointer;
-    align-self: center;
+    align-self: flex-start;
+}
+
+.link-actions form {
+    margin: 0;
 }
 
 .delete-button:hover,
