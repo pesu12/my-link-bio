@@ -145,17 +145,20 @@ h1 {
 }
 
 .delete-button {
-    border: 1px solid #fecaca;
-    background-color: #fee2e2;
-    color: #b91c1c;
+    border: 1px solid #dc2626;
+    background-color: #dc2626;
+    color: #ffffff;
     border-radius: 0.75rem;
     padding: 0.9rem 0.75rem;
     font-weight: 600;
     cursor: pointer;
 }
 
-.delete-button:hover {
-    background-color: #fecaca;
+.delete-button:hover,
+.delete-button:focus,
+.delete-button:active {
+    background-color: #dc2626;
+    color: #ffffff;
 }
 
 p {
