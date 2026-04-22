@@ -20,6 +20,9 @@
                 {% for link in links %}
                 <li class="link-item">
                     <a href="{{ link.url }}">{{ link.name }}</a>
+                    <form action="{{ url_for('delete_link', link_index=loop.index0) }}" method="POST">
+                        <button class="delete-button" type="submit">Delete</button>
+                    </form>
                 </li>
                 {% endfor %}
             </ul>
