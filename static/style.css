@@ -39,6 +39,22 @@ body {
     box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
 }
 
+
+.nav-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.contact-email {
+    color: var(--accent-color);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.contact-email:hover {
+    text-decoration: underline;
+}
 .nav-link {
     color: var(--accent-color);
     text-decoration: none;
